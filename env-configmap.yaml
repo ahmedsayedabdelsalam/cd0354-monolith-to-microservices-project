@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config
+data:
+  POSTGRES_HOST: db.cuz75sy6qq2o.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: postgres
+  AWS_BUCKET: ahmedsayedabdelsalam
+  AWS_REGION: us-east-1
+  AWS_PROFILE: default
+  URL: http://localhost:8100
