@@ -19,6 +19,13 @@ spec:
       - image: ahmedsayedll/udagram-frontend:v2
         name: frontend
         imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "500Mi"
+            cpu: "250m"
+          limits:
+            memory: "1000Mi"
+            cpu: "500m"
         ports:
         - containerPort: 80
       restartPolicy: Always
